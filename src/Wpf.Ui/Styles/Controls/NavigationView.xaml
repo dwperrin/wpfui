@@ -429,6 +429,8 @@
 
             <Grid
                 x:Name="PaneGrid"
+                Visibility="{TemplateBinding IsPaneVisible,
+                                             Converter={StaticResource BoolToVisibilityConverter}}"
                 Grid.Column="0"
                 Width="{TemplateBinding OpenPaneLength}"
                 Margin="4,0">
